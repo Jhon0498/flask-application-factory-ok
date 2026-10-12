@@ -1,9 +1,22 @@
-venv/
-.venv/
-__pycache__/
-*.pyc
+# Credenciais e configurações locais
 .env
 .env.*
-instance/
+
+# Bancos de dados e backups
+*.db
+*.sqlite
 *.sqlite3
-.DS_Store
+backup_estrutura/
+config_backup_dir/
+usuarios_backup_*.db
+
+# Arquivos temporários do Python
+__pycache__/
+*.py[cod]
+*.swp
+*.swo
+
+# Testes e ambientes virtuais
+.pytest_cache/
+.venv/
+venv/

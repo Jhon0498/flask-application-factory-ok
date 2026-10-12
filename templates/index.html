@@ -49,14 +49,7 @@
         <br>
 
         <!-- Checkbox -->
-        <div class="form-group">
-
-            <label>
-                {{ form.enviar_email() }}
-                {{ form.enviar_email.label.text }}
-            </label>
-
-        </div>
+        
 
         <br>
 
@@ -77,51 +70,5 @@
     <hr>
 
     <!-- Relação de usuários -->
-    <h2>Relação de usuários cadastrados</h2>
-
-    <table class="table">
-
-        <thead>
-            <tr>
-                <th>Usuário</th>
-                <th>Função</th>
-            </tr>
-        </thead>
-
-        <tbody>
-
-            {% for user in users %}
-
-                <tr>
-
-                    <td>
-                        {{ user.username }}
-                    </td>
-
-                    <td>
-                        {% if user.role %}
-                            {{ user.role.name }}
-                        {% else %}
-                            Sem função
-                        {% endif %}
-                    </td>
-
-                </tr>
-
-            {% else %}
-
-                <tr>
-                    <td colspan="2">
-                        Nenhum usuário cadastrado.
-                    </td>
-                </tr>
-
-            {% endfor %}
-
-        </tbody>
-
-    </table>
-
-</div>
 
 {% endblock %}
